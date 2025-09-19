@@ -1,0 +1,56 @@
+:root{
+  --ink: rgba(0,0,102,.8);                /* text color */
+  --paper: rgba(153,204,255,.7);     /* page background */
+  --brand-blue:  rgba(102,153,255,1);   /* accent */
+  --space-2: XXxxrem;         /* spacing scale */
+}
+body{ color: var(--ink); background: var(--paper); }
+
+header{
+  position: sticky; top: 0;
+  background: var(--paper);
+  border-bottom: 1px solid rgba(102,153,255,1);
+}
+
+.tagline{ opacity: .9; font-style: italic; }
+
+nav a:hover{ background: rgba(153,204,255,.5); } /* input your values! */
+
+nav{
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  padding: calc(var(--space-2) * 0.75) 0;
+}
+
+
+/* Headings */
+h1 {
+  color: xxxx;
+  text-align: xxxx;
+}
+
+h2 {
+  color: xxxx;
+  margin-top: xxxx;
+}
+
+/* Paragraphs */
+p {
+  line-height: xxxx;
+  font-size: xxxx;
+}
+
+/* Lists */
+ul {
+  list-style-type: xxxx;
+  padding-left: xxxx;
+}
+
+/* Footer */
+footer {
+  text-align: xxxx;
+  margin-top: xxxx;
+  font-size: xxxx;
+  color: xxxx;
+}
