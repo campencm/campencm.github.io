@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CJ Campen's Website</title>
+    <meta name="author" content="Lexie Hayes">
+    <meta name="date" content="2025-09-12">
+    <meta name="description" content="Personal homepage for CJ Campen">
+    <link rel="stylesheet" href="campen_style.css">
+  </head>
+  <body>
+    <a id="top"></a> <!-- back-to-top anchor -->
+    <header>
+      <h1>✮CJ's Mini Site✮</h1>
+      <h3 class="tagline">Student • Researcher</h3>
+      <nav>
+       <a href="#about">About Me</a>
+       <a href="#education">Education</a>
+       <a href="#projects">Projects</a>
+       <a href="#interests">Interests</a>
+       <a href="#perras">My Dogs!</a>
+       <a href="#contact">Contact Info</a>
+    </nav>
+   </header>
+   <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! My name is Cicely James (CJ) M. Campen, I use any pronouns, and I'm from Cleveland, Ohio!</p>
+      <p>I am currently an undergraduate student at the University of Kentucky studying linguistics and viola performance. I plan to finish both my undergraduate and graduate programs in just 4 years using the Advanced Masters Program (AMP).</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Lakewood High School — Graduated in 2024.
+        <li>University of Kentucky — Linguistics Major, Viola Performance Minor (set to graduate in 2028).</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Polona </li>
+        <li>Russian Project</li>
+        <li>Music Video</li>
+      </ul>
+    </section>
+    
+    <section id="interests">
+      <h2>Iterests</h2>
+      <ul>
+        <li>I am a section leader for the violas in the UK Philharmonic Orchestra.</li>
+        <li>I love watching and analyzing movies, especially horror & comedy movies.</li>
+      </ul>
+    </section>
+    
+    <section id="perras">
+      <h2>My Dogs!</h2>
+        <p>Meet my dogs Scout & Daisy!</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Info</h2>
+      <p>Email me at <a href="cmca319@uky.edu">cmca319@uky.edu</a></p>
+  </section>
+</main>
+  <footer>
+    <p>&copy; <span id="year"></span> CJ Campen</p>
+    <a href="#top">Back to top</a>
+    <script>
+      const yearSpan = document.getElementById("year");
+      yearSpan.textContent = new Date().getFullYear();
+    </script>  
+    <p>
+    </p>
+    <button class="button1" onclick="myFunction()">Toggle dark mode</button>
+    <script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode"); }
+    </script>
+  </footer>
+  </body>
+</html>
