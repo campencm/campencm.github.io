@@ -3,9 +3,9 @@
   --background: rgba(153,204,255,.7);   /* page background */
   --borders:  rgba(102,153,255,.8);     /* borders */
   --sec_back:  rgba(102,153,255,.6);    /* backgrounds for sections */
-  --text: rgba(0,0,120,.9);              /* default text color */
-  --big_text: rgba(0,0,99,.9);              /* Header text color */
-  --hover:  rgba(102,153,255,.6);            /* hover color */
+  --text: rgba(0,0,120,.9);             /* default text color */
+  --big_text: rgba(0,0,99,.9);          /* Header text color */
+  --hover:  rgba(102,153,255,.6);       /* hover color */
   
   /*Layout*/
   --page-width: 60ch;
@@ -15,8 +15,7 @@
   --space-4: 2rem;
   
   /*Rounding*/
-  --radius: 12px; 
-}
+  --radius: 12px; }
 
 .dark-mode {
   background-color: var(--big_text);
@@ -71,8 +70,7 @@ section  { border-radius: var(--radius); }
 /* Lists */
 ul {
   list-style: disc;
-  padding: var(--space-2) var(--space-3); 
-}
+  padding: var(--space-2) var(--space-3); }
 
 /*Link colors*/
 a:link { color: var(--text); }           /*unvisited links*/
