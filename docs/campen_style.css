@@ -3,7 +3,7 @@
   --background: rgba(153,204,255,.7);   /* page background */
   --borders:  rgba(102,153,255,.8);     /* borders */
   --sec_back:  rgba(102,153,255,.6);    /* backgrounds for sections */
-  --text: rgba(0,0,120,.9);             /* default text color */
+  --text: rgba(0,0,130,.9);             /* default text color */
   --big_text: rgba(0,0,99,.9);          /* Header text color */
   --hover:  rgba(102,153,255,.6);       /* hover color */
   
@@ -12,17 +12,18 @@
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
-  --space-4: 2rem;
+  --space-4: 1.5rem;
   
   /*Rounding*/
   --radius: 12px; }
+
 
 .dark-mode {
   background-color: var(--big_text);
   color: var(--text); }
 
 .dark-mode:header {
-  background: var(--big_text); 
+  background-color: var(--big_text); 
   color: var(--background); text-align: center; }
   
 
@@ -62,19 +63,26 @@ section  { border-radius: var(--radius); }
 #about, #education, #projects, #interests, #perras, #contact {
   scroll-margin-top: 125px; /* height of header */
   margin: 15px;
-  padding: 30px 50px;
+  padding: 15px 35px;
   background: var(--sec_back);
   border: 4px ridge var(--borders); 
-  border-radius: 20px; }
+  border-radius: 15px; }
 
 /* Lists */
 ul {
   list-style: disc;
   padding: var(--space-2) var(--space-3); }
+  
+  .right-aligned {
+  text-align: right; 
+  list-style-position: inside
+  }
+  
+
 
 /*Link colors*/
 a:link { color: var(--text); }           /*unvisited links*/
-a:active { color: var(--background); }   /*color links become when clicked*/
+a:active { color: var(--big_text); }   /*color links become when clicked*/
 
 /*Buttons*/
 .button1 { 
