@@ -8,7 +8,7 @@
   --hover:  rgba(102,153,255,.6);       /* hover color */
   
   /*Layout*/
-  --page-width: 60ch;
+  --page-width: 90%;
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -17,11 +17,10 @@
   /*Rounding*/
   --radius: 12px; }
 
-
+/*Dark Mode*/
 .dark-mode {
   background-color: var(--big_text);
   color: var(--text); }
-
 .dark-mode:header {
   background-color: var(--big_text); 
   color: var(--background); text-align: center; }
@@ -37,6 +36,14 @@ img  { max-width: 100%; height: auto; display: block; }
 /*Layout*/
 main   { max-width: var(--page-width); margin: 0 auto; padding: var(--space-3); }
 header { position: sticky; top: 0; background: var(--sec_back); border-bottom: 4px ridge var(--borders); padding: var(--space-1); }
+header { position: relative; }
+/* Top row containing icon + title */
+.header-top { display: flex; align-items: center; justify-content: center; /* centers the h1 */ position: relative; }
+/* The icon stays on the far left */
+.icon-container { position: absolute; left: 0;  top: 0; }
+/* Center the nav below the title */
+nav { text-align: center; margin-top: 10px; }
+
 
 /*Navi*/
 nav { display: flex; gap: var(--space-2); justify-content: center; padding: calc(var(--background) * 0.75) 0; }
@@ -56,33 +63,84 @@ section  { border-radius: var(--radius); }
 #education  { background: var(--sec_back);  }
 #projects   { background: var(--sec_back);  }
 #interests  { background: var(--sec_back);  }
+#songs      { background: var(--sec_back);  }
 #perras     { background: var(--sec_back);  }
 #contact    { background: var(--sec_back);  }
+#polona     { background: var(--sec_back);  }
+#alice      { background: var(--sec_back);  }
+#russian    { background: var(--sec_back);  }
+#video      { background: var(--sec_back);  }
+#overview   { background: var(--sec_back);  }
+#dataset    { background: var(--sec_back);  }
+#methods    { background: var(--sec_back);  }
+#results    { background: var(--sec_back);  }
 
 /*Section Backgrounds*/
-#about, #education, #projects, #interests, #perras, #contact {
+#about, #education, #projects, #interests, #songs, #perras, #contact, #polona, #alice, #russian, #video, #overview, #dataset, #methods, #results {
   scroll-margin-top: 125px; /* height of header */
   margin: 15px;
   padding: 15px 35px;
   background: var(--sec_back);
   border: 4px ridge var(--borders); 
   border-radius: 15px; }
+  
+  
+/* Dividing Sections */ 
+.flex-container {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Distributes space between items */
+  gap: 20px; /* Adds space between the columns (modern alternative to margin) */ }
+.left-section, .right-section {
+  flex: 1; /* Allows columns to grow and shrink equally */
+  padding: 20px;
+  background: var(--background);
+  border: 3px inset var(--borders); 
+  border-radius: 15px; }
+
+
 
 /* Lists */
 ul {
   list-style: disc;
-  padding: var(--space-2) var(--space-3); }
+  padding: var(--space-2) var(--space-3); 
+  margin: 0; }
   
   .right-aligned {
   text-align: right; 
-  list-style-position: inside
-  }
-  
+  list-style-position: inside }
+ 
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 55px;
+  background-color: var(--hover);
+  color: var(--big_text);
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 25px;
+
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
 
 
 /*Link colors*/
-a:link { color: var(--text); }           /*unvisited links*/
+a:link { color: var(--text); }  /*unvisited links*/
 a:active { color: var(--big_text); }   /*color links become when clicked*/
+
 
 /*Buttons*/
 .button1 { 
