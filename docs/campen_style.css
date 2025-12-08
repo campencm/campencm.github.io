@@ -26,7 +26,7 @@
   color: var(--background); text-align: center; }
   
 
-/* .tagline { opacity: .9; font-style: italic; } */
+.tagline { opacity: .9; font-style: italic; }
 
 /*Base*/
 html { font-family: Georgia, serif }
@@ -90,14 +90,18 @@ section  { border-radius: var(--radius); }
   display: flex; /* Enables Flexbox layout */
   justify-content: space-between; /* Distributes space between items */
   gap: 20px; /* Adds space between the columns (modern alternative to margin) */ }
-.left-section, .right-section {
+.right-section { 
   flex: 1; /* Allows columns to grow and shrink equally */
   padding: 20px;
   background: var(--background);
-  border: 3px inset var(--borders); 
-  border-radius: 15px; }
+  border: 3px ridge var(--borders); 
+  border-radius: 15px; } 
+  
+/*Rounding the corners of the Alice's Resturant Image*/
+.alice-rounding {
+  border-radius: 12px; }
 
-
+  
 
 /* Lists */
 ul {
@@ -105,9 +109,9 @@ ul {
   padding: var(--space-2) var(--space-3); 
   margin: 0; }
   
-  .right-aligned {
-  text-align: right; 
-  list-style-position: inside }
+.right-aligned {
+text-align: right; 
+list-style-position: inside }
  
 
 /* Tooltip */
