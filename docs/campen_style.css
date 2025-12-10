@@ -86,7 +86,7 @@ section  { border-radius: var(--radius); }
 .flex-container { display: flex; /* Enables Flexbox layout */ justify-content: space-between; /* Distributes space between items */ gap: 20px; /* Adds space between the columns (modern alternative to margin) */ } 
 .right-section { flex: 1; /* Allows columns to grow and shrink equally */ padding: 20px; border-radius: 15px; }
 
-.image-rounding {border-radius: 15px;}
+.image-rounding {border-radius: 12px;}
 
   
 /* row containing the equal sections */
