@@ -40,9 +40,10 @@
           <p><b>A linguistic anaylsis of the song <i>Alice's Resturant Massacree</i></b></p>
           <ul>
             <li>Goal: too see what linguistically interesting aspects of the song I can find.</li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Was most interested in Alro's characteristic pronunciation of words and the repetition of words and phrases.</li>
+            <li>I looked most at part of speech and it's distribution.</li>
+            <li>Also looked at WuPalmer scores because of all the repeated words and phrases in the song.</li>
+            <li>Looked a bit a word length and the amount of vowels in each word in component 2.</li>
           </ul>
       </section>
      
@@ -54,7 +55,6 @@
             <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/alices-restaurant-massacree/41229184?i=41229186"></iframe>
           </aside>
           <div class="right-section">
-          <!-- Content for the right side -->
              <p><b><i>Alice's Restaurant Massacree</i> by Arlo Guthrie</b><p>
               <ul>
                <li>An 18 minute, ~2630 word, talking blues song telling the story of when folk singer Alro Guthrie was arrested for littering on Thanksgiving day in 1965 (which gave him a criminal record, disqualifying him from the draft).</li>
@@ -66,6 +66,13 @@
                <li>I also had to add in all the examples of g-dropping and shortened "and's."</li>
                <li>I only used the first verse in my analysis so I didn't have to work with too much data.</li>
               </ul>
+              <ul>
+            <li>Things I found most interesting about the song:</li>
+            <dt>— The non-standard pronunciation of words like 'massacree' or 'restaurant.'</dt>
+            <dt>— The repetition of words and phrases like 'twenty-seven eight-by-ten colored glossy photographs with circles and arrows An’ a paragraph on the back of each one explainin’ what each one was to be used as evidence against us.'</dt>
+            <dt>— How each repetition of a word or phrase changes each time it's repeated.</dt>
+            <dt>— How it being a spoken song telling a story influences part of speech in comparison to other non-spoken story songs.</dt>
+          </ul>
           </div>
         </div>
       </section>
@@ -77,15 +84,21 @@
             <li>My first pie chart originally had a couple extra categories called 'Verb Verb' or 'X' (I don't know what types of words were in them).</li>
             <li>I had to figure out how to take those sections out becuase they were making the pie chart hard to read and I didn't feel like I needed them.</li>
             <li>It was also a lot of work to get the key in and to the side of the pie chart</li>
-            <dt>— Some of the code for that: <img class="image-rounding" src="pie_chart_code.png" width="30%" height="100%"> </dt>
-            <li>The Plotly interactive scatter plots were really cool but hard to put into my website and it took even more work to make them look pretty (My CSS is reeeeeally long).</li>
-            <li></li>
-            <li>My pie charts </li>
+            <dt>— Some of the code for that: <img class="image-rounding" src="pie_chart_code.png" width="30%" height="100%"></dt>
+            <li>The Plotly interactive scatter plots were really cool but hard to put into my website, and it took even longer to make them look pretty (My CSS is reeeeeally long).</li>
           </ul>
-        <p><b>Pie Charts and Plotly Interactive Scatter Plots</b></p>
+        <p><b>Function to find Part of Speech</b></p>
           <ul>
-            <li></li>
+            <li>I had to use a function to find part of speech (POS) for my pos distribution</li>
+            <li>POS function code: <img class="image-rounding" src="pos_def_code.png" width="20%" height="100%"></li>
+            <li>What it does:</li>
+             <dt>— Looks at the text (song lyrics)</dt>
+             <dt>— nlp's that text and defines it as 'doc'</dt>
+             <dt>— returns the part of speech for each word</dt>
+             <dt>— Looks at the 'word' column of my DataFrame from component 2 and applies the function to each word and then puts them in another DataFrame called 'df_pos'</dt>
           </ul>
+        <p></p>
+        <p></p>
         <p>*Big shout out to Kendal for all those late nights at the library working on this project and other assignments for this class, thank you! :)*</p>
       </section>
       
@@ -153,10 +166,10 @@
       <section id="methods">
         <p><b>What I would change/add if I continued this analysis:</b></p>
           <ul>
-            <li>I would compare part of speech distribution with more than just one other song, it would be cool to see what different genres looked like comparatively.</li>
-            <li>I would change the way I cleaned my data and the way I analysed WuPalmer scores to get better, easier to understand results.</li>
+            <li>Compare part of speech distribution with more than just one other song, it would be cool to see what different genres looked like comparatively.</li>
+            <li>Change the way I cleaned my data and the way I analysed WuPalmer scores to get better, easier to understand results.</li>
             <li>I would love to get an IPA transcription of the song and compare his pronunciation of certain words (like "restruant" and "massacree") to standard pronunciations of those same words.</li>
-            <li>Maybe look at the second verse??</li>         
+            <li>Look at the second verse??</li>         
           </ul>
       </section>
       
