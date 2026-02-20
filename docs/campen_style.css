@@ -66,6 +66,7 @@ section  { border-radius: var(--radius); }
 #contact    { background: var(--sec_back);  }
 #polona     { background: var(--sec_back);  }
 #alice      { background: var(--sec_back);  }
+#arlo       { background: var(--sec_back);  }
 #russian    { background: var(--sec_back);  }
 #video      { background: var(--sec_back);  }
 #overview   { background: var(--sec_back);  }
@@ -74,7 +75,7 @@ section  { border-radius: var(--radius); }
 #results    { background: var(--sec_back);  }
 
 /*Section Backgrounds*/
-#about, #education, #projects, #interests, #songs, #perras, #contact, #polona, #alice, #russian, #video, #overview, #dataset, #methods, #results {
+#about, #education, #projects, #interests, #songs, #perras, #contact, #polona, #alice, #arlo, #russian, #video, #overview, #dataset, #methods, #results {
   scroll-margin-top: 90px; /* height of header */
   margin: 15px;
   padding: 15px 35px;
