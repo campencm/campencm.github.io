@@ -1,10 +1,10 @@
 :root{
   /*Palette*/
-  --background: white;   /* page background */
-  --borders:  rgba(102,153,255,.8);     /* borders */
-  --sec_back:  rgba(102,153,255,.6);    /* backgrounds for sections */
-  --text: rgba(0,0,130,.9);             /* default text color */
-  --big_text: rgba(0,0,99,.9);          /* Header text color */
+  --background: rgba(102,153,255,.2);   /* page background */
+  --borders:  cornflowerblue;     /* borders */
+  --sec_back:  rgba(102,153,255,.4);    /* backgrounds for sections */
+  --text: rgba(0,0,120,.9);             /* default text color */
+  --big_text: rgba(0,0,100,.9);          /* Header text color */
   --hover:  rgba(102,153,255,.6);       /* hover color */
   
   /*Layout*/
@@ -15,15 +15,7 @@
   --space-4: 1.5rem;
   
   /*Rounding*/
-  --radius: 12px; }
-
-/*Dark Mode*/
-.dark-mode {
-  background-color: var(--big_text);
-  color: var(--text); }
-.dark-mode: header {
-  background-color: var(--big_text); 
-  color: var(--background); text-align: center; }
+  --radius: 6px; }
 
 
 /*Base*/
@@ -33,7 +25,7 @@ img  { max-width: 100%; height: auto; display: block; }
 
 /*Layout*/
 main   { max-width: var(--page-width); margin: 0 auto; padding: var(--space-3); padding-top: 160px; }
-header { position: fixed; width: 100%; z-index: 500; background: var(--sec_back); border-bottom: 4px ridge var(--borders); padding: var(--space-1); padding-top: 20px; /* ensures space above h1 so icon doesn’t collide */ }
+header { position: fixed; width: 100%; z-index: 500; background: var(--sec_back); padding: var(--space-1); padding-top: 20px; /* ensures space above h1 so icon doesn’t collide */ }
 
 /* Flex container for H1 centering */
 .header-top { display: flex; justify-content: center; align-items: center; position: relative; }
@@ -64,7 +56,7 @@ section  { border-radius: var(--radius); }
 #results    { background: var(--sec_back);  }
 
 /*Section Backgrounds*/
-#introduction, #methodology, #contact, #dataset, #results {
+#introduction, #methodology, #dataset, #results, #contact {
   scroll-margin-top: 90px; /* height of header */
   margin: 15px;
   padding: 15px 35px;
