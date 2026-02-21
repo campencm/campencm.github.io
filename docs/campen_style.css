@@ -73,9 +73,18 @@ section  { border-radius: var(--radius); }
 #dataset    { background: var(--sec_back);  }
 #methods    { background: var(--sec_back);  }
 #results    { background: var(--sec_back);  }
+#introduction     { background: var(--sec_back);  }
+#questions        { background: var(--sec_back);  }
+#methodology      { background: var(--sec_back);  }
+#results          { background: var(--sec_back);  }
+#analysis         { background: var(--sec_back);  }
+#conclusion       { background: var(--sec_back);  }
+#references       { background: var(--sec_back);  }
+#acknowledgements { background: var(--sec_back);  }
+#audios           { background: var(--sec_back);  }
 
 /*Section Backgrounds*/
-#about, #education, #projects, #interests, #songs, #perras, #contact, #polona, #alice, #arlo, #russian, #video, #overview, #dataset, #methods, #results {
+#about, #education, #projects, #interests, #songs, #perras, #contact, #polona, #alice, #arlo, #russian, #video, #overview, #dataset, #methods, #results, #introduction, #questions, #methodology, #results, #analysis, #conclusion, #references, #acknowledgements, #audios {
   scroll-margin-top: 90px; /* height of header */
   margin: 15px;
   padding: 15px 35px;
